@@ -1,0 +1,168 @@
+
+body{
+	overflow-x: hidden;
+}
+
+#portada{
+	background-image: url("../img/traspa.png"), url("../img/portada.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+	height: 100vh;
+	width: 100vw;
+	position:relative;
+	p{
+		color:white;
+		font-size: 1.1em;
+		&.icon-menu{
+			cursor:pointer;
+		}
+	}
+	img[alt='logo']{
+		margin-top: 2em;
+		width: 350px;
+		max-width: 100%;
+	}
+	h1{
+		font-size: 3em;
+		color:white;
+		margin-top: 3em;
+		width: 300px;
+		max-width: 100%;
+		img{
+			animation: manotasIzquierda 1s linear infinite;
+			cursor: pointer;
+		}
+	}
+	.open-menu{
+		position: absolute;
+		min-height: 100vh;
+		left:-20vw;
+		transition: all .5s;
+		&.open{
+			left:0;
+			transition: all .5s;
+		}
+		ul{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-around;
+			background-color: #FFF;
+			margin: 0;
+			padding: .5em 1em;
+			list-style: none;
+			height: 100vh;
+			width: 20vw;
+			li{
+				text-transform: lowercase;
+				cursor: pointer;
+				transition: all .3s;
+				&:hover{
+					a{
+						box-shadow: inset 20em 0 green;
+						padding-left: 1em;
+						transition: all .5s;
+						color:white;
+					}
+				}
+				a{
+					padding: .5em 0;
+					padding-left: .5em;
+					transition: all .5s;
+					display: block;
+					box-shadow: inset 2px 0em 0em green;
+				}
+			}
+		}
+	}
+	.home{
+		transition: all .5s;
+		position: relative;
+		left:0;
+	}
+	.menu{
+		left: 20vw;
+		position: relative;
+		transition: all .5s;
+	}
+}
+
+#portada2{
+	@extend #portada;
+	background: url("../img/portada2.png") no-repeat, radial-gradient(ellipse at center, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background-position: center center;
+	background-size: cover;
+	@include desde(web){
+		background-size: contain , cover;
+		background-position: 18% top;
+	}
+	h1{
+		text-align: right !important;
+		img{
+			animation: manotasDerecha 1s linear infinite;
+		}
+	}
+}
+#portada3{
+	height: 100vh;
+	width: 100%;
+	background: url("../img/portada-3.png"), url("../img/portada-3-1.png"), radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(243,226,199,1) 63%, rgba(243,226,199,1) 100%);;
+	background-position: 90% top , 10% top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	.ed-container{
+		height: 100%;
+		.ed-item{
+			height: 100%;
+		}
+	}
+	h1{
+		color: #000;
+		margin-left: 40%;
+		img{
+			animation: manotasIzquierda 1s linear infinite;
+			cursor: pointer;
+		}
+	}
+}
+
+
+footer{
+	background-image: url("../img/textura.jpg");
+	color:white;
+	figure{
+		border-right: 1px solid white;
+		padding-right: 1.5em;
+	}
+	span{
+		font-size: 1.4em;
+		margin-right: 1em;
+	}
+	a{
+		color:white;
+	}
+}
+
+@keyframes manotasIzquierda {
+	0%{
+		margin-left: 0;
+	}
+	50%{
+		margin-left: .3em;
+	}
+	100%{
+		margin-left: 0;
+	}
+}
+@keyframes manotasDerecha {
+	0%{
+		margin-right: 0;
+	}
+	50%{
+		margin-right: .3em;
+	}
+	100%{
+		margin-right: 0;
+	}
+}
