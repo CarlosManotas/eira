@@ -29,7 +29,23 @@
           <h1>IDENTIDAD NACIONAL <figure><img src="img/izquierda-blanca.png" alt=""></figure></h1>
         </div>
       </div>
-      <div class="ed-container portafolio"></div>
+      <div class="portafolio">
+        <div class="ed-container">
+          <div class="ed-item">
+            <figure><img src="img/derecha.png" alt=""></figure>
+            <h2>todo aqui</h2>
+            <ul class="bxslider">
+              <li><img src="/img/identidad-nacional/pic1.jpg" /></li>
+              <li><img src="/img/identidad-nacional/pic2.jpg" /></li>
+              <li><img src="/img/identidad-nacional/pic3.jpg" /></li>
+              <li><img src="/img/identidad-nacional/pic4.jpg" /></li>
+              <li><img src="/img/identidad-nacional/pic5.jpg" /></li>
+              <li><img src="/img/identidad-nacional/pic6.jpg" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
     </div>
     <section id='portada2'>
       <div class="ed-container">
@@ -53,17 +69,31 @@
         </div>
         <div class="ed-item base-30 cross-center">
           <div class="redes">
-            <a href=""><span class="icon-facebook"></span></a>
+            <a href="https://www.facebook.com/profile.php?id=100012347803652"><span class="icon-facebook"></span></a>
             <a href=""><span class="icon-twitter"></span></a>
             <a href=""><span class="icon-instagram"></span></a>
           </div>
         </div>
+        <div class="ed-item base-55 main-end cross-center">
+          <a href="mailto:eiraeiradi@gmail.com"><span class="icon-correo"></span></a>
+          <input type="mail" >
+        </div>
       </div>
+        
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/bxslider.min.js"></script>
+    <script>  
+
+      $('.bxslider').bxSlider({
+        auto: true,
+        autoControls: true
+      });
+
+    </script>
   </body>
 </html>
