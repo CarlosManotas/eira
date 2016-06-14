@@ -2573,7 +2573,8 @@ body {
           flex-flow: column nowrap;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      background-color: #FFF;
+      background: url("../img/traspa.png") no-repeat, white;
+      background-size: cover;
       margin: 0;
       padding: .5em 1em;
       list-style: none;
@@ -2581,20 +2582,18 @@ body {
       width: 20vw;
       overflow: hidden; }
       #portada .open-menu ul li, #portada2 .open-menu ul li {
-        text-transform: lowercase;
         cursor: pointer;
         transition: all .3s; }
         #portada .open-menu ul li:hover a, #portada2 .open-menu ul li:hover a {
-          box-shadow: inset 20em 0 green;
+          box-shadow: inset 20em 0 white;
           padding-left: 1em;
-          transition: all .5s;
-          color: white; }
+          transition: all .5s; }
         #portada .open-menu ul li a, #portada2 .open-menu ul li a {
           padding: .5em 0;
           padding-left: .5em;
           transition: all .5s;
           display: block;
-          box-shadow: inset 2px 0em 0em green; }
+          box-shadow: inset 2px 0em 0em white; }
   #portada .home, #portada2 .home {
     transition: all .5s;
     position: relative;
@@ -2659,6 +2658,7 @@ footer {
   background-size: cover;
   color: white; }
   footer figure {
+    padding-top: .5em;
     border-right: 1px solid white;
     padding-right: 1.5em; }
   footer span {
