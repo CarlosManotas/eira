@@ -6,7 +6,7 @@
  	var menu = $('#portada .icon-menu');
  	var menuOpen = $('.open-menu');
  	var identidad = $('#portada .titulo img'); 
- 	var retroceder = $('#portada .portafolio img');
+ 	var retroceder = $('#portada .portafolio .back');
 
 
  	menu.on('click',function(){

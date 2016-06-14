@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>Eira</title>
     <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
   </head>
   <body ng-app="app">
     <div id="portada">
@@ -32,8 +33,7 @@
       <div class="portafolio">
         <div class="ed-container">
           <div class="ed-item">
-            <figure><img src="img/derecha.png" alt=""></figure>
-            <h2>todo aqui</h2>
+            <p class='back'>volver</p>
             <ul class="bxslider">
               <li><img src="img/identidad-nacional/pic1.jpg" /></li>
               <li><img src="img/identidad-nacional/pic2.jpg" /></li>
@@ -41,6 +41,8 @@
               <li><img src="img/identidad-nacional/pic4.jpg" /></li>
               <li><img src="img/identidad-nacional/pic5.jpg" /></li>
               <li><img src="img/identidad-nacional/pic6.jpg" /></li>
+              <li><img src="img/identidad-nacional/pic7.jpg" /></li>
+              <li><img src="img/identidad-nacional/pic8.jpg" /></li>
             </ul>
           </div>
         </div>
@@ -86,12 +88,17 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/bxslider.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script>  
 
       $('.bxslider').bxSlider({
         auto: true,
-        autoControls: true
+        autoControls: true,
+        responsive: true,
+        minSlides: 1,
+        maxSlides: 3,
+        slideWidth: 350,
+        slideMargin: 5
       });
 
     </script>
