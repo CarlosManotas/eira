@@ -2622,7 +2622,7 @@ body {
       padding-left: 3em; }
 
 #yo {
-  background: url(../img/traspa.png), url(../img/foto-perfil.jpg) no-repeat;
+  background: url(../img/foto-perfil.jpg) no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
