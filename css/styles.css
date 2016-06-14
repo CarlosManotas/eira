@@ -2624,7 +2624,17 @@ body {
 #portada2 {
   background: url("../img/portada2.png") no-repeat, radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 100%);
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  #portada2 .vremya {
+    position: relative;
+    left: 0;
+    transition: all .5s; }
+    #portada2 .vremya.open {
+      left: 100vw;
+      transition: all .5s; }
+  #portada2 .portafolio {
+    left: -100vw; }
   @media screen and (min-width: 1024px) {
     #portada2 {
       background-size: contain , cover;
@@ -2644,7 +2654,8 @@ body {
   background: url("../img/portada-3.png"), url("../img/portada-3-1.png"), radial-gradient(ellipse at center, white 0%, #a6a298 63%, #a6a298 100%);
   background-position: 90% top , 18% top;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  position: relative; }
   #portada3 .ed-container {
     height: 100%; }
     #portada3 .ed-container .ed-item {
@@ -2656,6 +2667,28 @@ body {
     #portada3 h1 img {
       animation: manotasIzquierda 1s linear infinite;
       cursor: pointer; }
+  #portada3 .planimetria {
+    left: 0;
+    transition: all .5s;
+    position: relative; }
+    #portada3 .planimetria.open {
+      left: -100vw;
+      transition: all .5s; }
+  #portada3 .portafolio {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 100vw;
+    transition: all .5s;
+    overflow: hidden; }
+    #portada3 .portafolio.open {
+      transition: all .5s;
+      left: 0; }
+    #portada3 .portafolio .back {
+      cursor: pointer;
+      margin-top: 1em;
+      padding-left: 3em; }
 
 footer {
   background: url("../img/traspa.png") no-repeat, rgba(0, 0, 0, 0.75);

@@ -115,6 +115,19 @@ body{
 	background: url("../img/portada2.png") no-repeat, radial-gradient(ellipse at center, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
 	background-position: center center;
 	background-size: cover;
+	position:relative;
+	.vremya{
+		position: relative;
+		left:0;
+		transition: all .5s;
+		&.open{
+			left: 100vw;
+			transition: all .5s;
+		}
+	}
+	.portafolio{
+		left: -100vw;
+	}
 	@include desde(web){
 		background-size: contain , cover;
 		background-position: 18% top;
@@ -131,12 +144,14 @@ body{
 	}
 }
 #portada3{
+
 	height: 100vh;
 	width: 100%;
 	background: url("../img/portada-3.png"), url("../img/portada-3-1.png"), radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(166,162,152,1) 63%, rgba(166,162,152,1) 100%);
 	background-position: 90% top , 18% top;
 	background-repeat: no-repeat;
 	background-size: contain;
+	position: relative;
 	.ed-container{
 		height: 100%;
 		.ed-item{
@@ -150,6 +165,33 @@ body{
 		img{
 			animation: manotasIzquierda 1s linear infinite;
 			cursor: pointer;
+		}
+	}
+	.planimetria{
+		left:0;
+		transition: all .5s;
+		position: relative;
+		&.open{
+			left: -100vw;
+			transition: all .5s;
+		}
+	}
+	.portafolio{
+		position:absolute;
+		width: 100vw;
+		height: 100vh;
+		top:0;
+		left: 100vw;
+		transition: all .5s;
+		overflow: hidden;
+		&.open{
+			transition: all .5s;
+			left:0;
+		}
+		.back{
+			cursor:pointer;
+			margin-top: 1em;
+			padding-left: 3em;
 		}
 	}
 }

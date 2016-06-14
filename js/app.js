@@ -7,7 +7,10 @@
  	var menuOpen = $('.open-menu');
  	var identidad = $('#portada .titulo img'); 
  	var retroceder = $('#portada .portafolio .back');
-
+ 	var retroceder2 = $('#portada2 .portafolio .back');
+ 	var retroceder3 = $('#portada3 .portafolio .back');
+ 	var vremya = $('#portada2 img');
+ 	var planime = $('#portada3 img');
 
  	menu.on('click',function(){
  		var t = $(this);
@@ -28,6 +31,26 @@
  		var t = $(this);
  		$(document).find('#portada .home').removeClass('open');
  		$(document).find('#portada .portafolio').removeClass('open');
+ 	});
+ 	vremya.on('click',function(){
+ 		var t = $(this);
+ 		$(document).find('#portada2 .portafolio').addClass('open');
+ 		$(document).find('.vremya').addClass('open');
+ 	});
+ 	retroceder2.on('click',function(){
+ 		var t = $(this);
+ 		$(document).find('#portada2 .portafolio').removeClass('open');
+ 		$(document).find('.vremya').removeClass('open');
+ 	});
+ 	planime.on('click',function(){
+ 		var t = $(this);
+ 		$(document).find('#portada3 .portafolio').addClass('open');
+ 		$(document).find('.planimetria').addClass('open');
+ 	});
+ 	retroceder3.on('click',function(){
+ 		var t = $(this);
+ 		$(document).find('#portada3 .portafolio').removeClass('open');
+ 		$(document).find('.planimetria').removeClass('open');
  	});
 	$.getScript('https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js', function()
 	   {
