@@ -11,12 +11,13 @@
     <div id="portada">
       <div class="open-menu">
         <ul>
-          <li><a href="#"> SOBRE MI</a></li>
-          <li><a href="#"> COLECCION DE AUTOR</a></li>
+          <li><a href="sobremi.html"> SOBRE MI</a></li>
+          <li><a href="coleccion.html"> COLECCION DE AUTOR</a></li>
           <li><a href="#"> IDENTIDAD NACIONAL</a></li>
-          <li><a href="#"> PLANIMETRIA</a></li>
-          <li><a href="#"> PSICOSIS</a></li>
-          <li><a href="#"> DISENO TEXTIL</a></li>
+          <li><a href="#portada2">VREMYA</a></li>
+          <li><a href="#portada3"> PLANIMETRIA</a></li>
+          <li><a href="psicosis.html"> PSICOSIS</a></li>
+          <li><a href="textil.html"> DISENO TEXTIL</a></li>
         </ul>
       </div>
       <div class="ed-container home">
@@ -35,6 +36,7 @@
           <div class="ed-item">
             <p class='back'>volver</p>
             <ul class="bxslider">
+              <li><iframe width="500" height="281" src="https://www.youtube.com/embed/alUSyQGPIyg" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe></li>
               <li><img src="img/identidad-nacional/pic1.jpg" /></li>
               <li><img src="img/identidad-nacional/pic2.jpg" /></li>
               <li><img src="img/identidad-nacional/pic3.jpg" /></li>
@@ -43,6 +45,7 @@
               <li><img src="img/identidad-nacional/pic6.jpg" /></li>
               <li><img src="img/identidad-nacional/pic7.jpg" /></li>
               <li><img src="img/identidad-nacional/pic8.jpg" /></li>
+              <li><img src="img/identidad-nacional/pic9.jpg" /></li>
             </ul>
           </div>
         </div>
@@ -68,6 +71,7 @@
               <li><img src="img/vremya/6.jpg" alt=""></li>
               <li><img src="img/vremya/7.jpg" alt=""></li>
               <li><img src="img/vremya/8.jpg" alt=""></li>
+              <li><img src="img/vremya/9.jpg" alt=""></li>
             </ul>
           </div>
         </div>
@@ -84,7 +88,6 @@
           <div class="ed-item">
             <p class="back">volver</p>
             <ul class="bxslider">
-              <li><img src="img/planimetria/1.jpg" alt=""></li>
               <li><img src="img/planimetria/2.jpg" alt=""></li>
               <li><img src="img/planimetria/3.jpg" alt=""></li>
               <li><img src="img/planimetria/4.jpg" alt=""></li>
@@ -92,6 +95,7 @@
               <li><img src="img/planimetria/6.jpg" alt=""></li>
               <li><img src="img/planimetria/7.jpg" alt=""></li>
               <li><img src="img/planimetria/8.jpg" alt=""></li>
+              <li><img src="img/planimetria/9.jpg" alt=""></li>
             </ul>
           </div>
         </div>
@@ -121,6 +125,7 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script>  
 
@@ -131,7 +136,9 @@
         minSlides: 1,
         maxSlides: 3,
         slideWidth: 350,
-        slideMargin: 5
+        slideMargin: 5,
+        video: true,
+        useCSS: false
       });
 
     </script>

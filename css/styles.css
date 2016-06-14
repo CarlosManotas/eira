@@ -2621,6 +2621,26 @@ body {
       margin-top: 1em;
       padding-left: 3em; }
 
+#yo {
+  background: url(../img/traspa.png), url(../img/foto-perfil.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center; }
+  #yo .planimetria {
+    height: 100%; }
+  #yo .yo {
+    width: 100%; }
+    #yo .yo h1 {
+      text-align: center;
+      color: white; }
+    #yo .yo p {
+      color: white;
+      width: 50%;
+      margin: 0 auto; }
+    #yo .yo a p {
+      color: #ddd; }
+
 #portada2 {
   background: url("../img/portada2.png") no-repeat, radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 100%);
   background-position: center center;
@@ -2635,6 +2655,9 @@ body {
       transition: all .5s; }
   #portada2 .portafolio {
     left: -100vw; }
+  .noimg #portada2 {
+    background: url("../img/traspa.png") no-repeat, radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 100%);
+    background-size: cover; }
   @media screen and (min-width: 1024px) {
     #portada2 {
       background-size: contain , cover;
@@ -2656,6 +2679,12 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative; }
+  .noimg #portada3 {
+    background: url("../img/traspa.png") no-repeat, radial-gradient(ellipse at center, white 0%, #a6a298 63%, #a6a298 100%);
+    background-size: cover; }
+    .noimg #portada3 h1 {
+      margin: auto;
+      text-align: center; }
   #portada3 .ed-container {
     height: 100%; }
     #portada3 .ed-container .ed-item {
